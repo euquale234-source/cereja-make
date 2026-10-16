@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Produtinhos | Cereja Make</title>
+<meta name="description" content="Make, acessórios e cosméticos de R$ 10 a R$ 25 em Macapá, com preço na vitrine e pedido pelo WhatsApp.">
+<meta name="theme-color" content="#FFE9EE">
+<!-- PRÉVIA: tirar a linha abaixo quando o site sair do modo prévia -->
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/marca/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/marca/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Nunito:wght@400;600;700&family=Pacifico&family=Playfair+Display:ital,wght@0,600;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<div class="ambiente" aria-hidden="true"></div>
+<header class="topo" id="topo"></header>
+
+<main id="main" tabindex="-1" class="pagina">
+  <div class="sec__in">
+    <h1>Produtinhos</h1>
+    <div class="ferramentas">
+      <div class="bairro-topo"><label for="bairro-c">Seu bairro</label><span id="slot-bairro-c"></span><span class="js-entrega"></span></div>
+      <label class="busca" for="busca"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><use href="#i-busca"/></svg><input id="busca" type="search" placeholder="Procurar produtinho" autocomplete="off"></label>
+      <div class="filtros" aria-label="Filtros">
+        <span class="rotulo">Categoria</span><span id="filtro-cat" style="display:contents"></span>
+      </div>
+      <div class="filtros">
+        <span class="rotulo">Preço</span><span id="filtro-faixa" style="display:contents"></span>
+        <label class="so-leitor" for="filtro-marca">Marca</label>
+        <select id="filtro-marca" style="min-height:44px;padding:6px 12px;border-radius:999px;border:1px solid var(--text-secondary);background:var(--panel);font:700 .95rem var(--body);color:var(--text-primary)"></select>
+      </div>
+    </div>
+    <p class="linha-mono" id="contagem" style="margin-top:18px" aria-live="polite"></p>
+    <div class="grade" id="grade-catalogo"></div>
+    <p class="vazio" id="vazio" hidden>Nada com esse nome por aqui. Chama no WhatsApp que a gente procura pra você. <a class="link" data-wa="geral" href="#">Pedir no WhatsApp</a></p>
+    <p class="aviso-interno" id="aviso-previa" hidden></p>
+  </div>
+</main>
+
+<footer class="rodape" id="rodape"></footer>
+
+<script src="loja.js" defer></script>
+<script src="produtos.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
